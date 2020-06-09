@@ -1,0 +1,52 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  //overflow-x: hidden;
+}
+
+body{
+  font-family: "Open Sans",sans-serif;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.section__wrapper{
+  display: flex;
+  min-height: 300px;
+  width: 100%;
+  flex-direction:column;
+  position: relative;
+  z-index: 100;
+}
+
+@media(min-width:660px){
+  .section__wrapper{
+    min-height: 620px;
+    background:url(../../images/back-tablet@1x.png) no-repeat;
+    background-size: 100%;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media(min-width:1200px){
+  .section__wrapper{
+    min-height: 855px;
+    background: url('../../images/back-desktop.jpg') 30% 30% no-repeat;
+    background-size: 100%;
+  }
+}
+

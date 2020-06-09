@@ -20,7 +20,6 @@ function Sass(){
         .pipe(server.reload({stream:true}))
 }
 
-
 function Server(){
     server.init({server:"./",browser:'chrome'});
     gulp.watch('scss/**/*.scss',gulp.series(Sass))

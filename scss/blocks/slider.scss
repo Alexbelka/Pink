@@ -1,0 +1,36 @@
+.slider{
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+  //padding-left: 20px;
+  //padding-right: 20px;
+
+
+}
+
+.slider__controls{
+  width:(67/320)*100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 100;
+  left:50%;
+  transform:translate(-50%);
+  bottom:30px;
+
+}
+
+.slider__switcher-label{
+  width: 15px;
+  height: 15px;
+  border:1px solid black;
+  border-radius:50%;
+  cursor:pointer;
+}
+
+#btn-1:checked ~ .slider__controls label[for="btn-1"],
+#btn-2:checked ~ .slider__controls label[for="btn-2"],
+#btn-3:checked ~ .slider__controls label[for="btn-3"]{
+  background-color:black;
+}

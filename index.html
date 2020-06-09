@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="page-header">
+    <nav class="header-navigation header-navigation--opened">
+        <ul class="header-navigation__menu">
+            <li class="header-navigation__item header-navigation__item--active"><a href="#">
+                <picture>
+                    <source media="(min-width:660px)" srcset="images/logotablet.png">
+                    <source media="(min-width:1000px)" srcset="images/logodesktop.png">
+                    <img src="images/logotype.png"  width="75" height="22" alt="">
+                </picture>
+            </a>
+            <button class="header-navigation__close">
+                <span class="visually-hidden">Закрыть меню</span>
+            </button>
+                <button class="header-navigation__open visually-hidden">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+            </li>
+            <li class="header-navigation__item header-navigation__item--element"><a href="#">главная</a></li>
+            <li class="header-navigation__item header-navigation__item--element"><a href="#">фотографии</a></li>
+            <li class="header-navigation__item header-navigation__item--element"><a href="#">конкурс</a></li>
+            <li class="header-navigation__item header-navigation__item--element"><a href="#">html academy</a></li>
+        </ul>
+    </nav>
+    <div class="section__wrapper">
+    <section class="iphone-hand">
+        <div class="iphone-hand__phone"></div>
+    </section>
+    <section class="download-app">
+        <h1 class="download-app__title">Взгдяните<br>на жизнь<br> иначе</h1>
+        <a href="#" class="download-app__ref">
+            Скачать приложение
+        </a>
+        <ul class="download-app__producers">
+            <li class="download-app__item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="56" viewBox="0 0 47 56">
+                    <image id="apple-logo.svg" width="47" height="56" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAA4CAYAAABt9KGPAAACiUlEQVRoge2Zi23CMBCGfVEHoBO03QAmKNmAEegEbSeATkA7AWwATACdADYgnSB0gqsOziEktnEgii9SPylCIsj5Y873VCFBxCEizvFEP6ggH1h0imXkikfEDiKuDKI1HQEyyyBi17LbmlSa5gO84zuHcGIqQGqZwqG0MZCmm4QPPITvBEgtg4gbD/HyvAwf0ktMBEgtg4jjVh5SdRTv8ulyhSu7eHKZtXiWuzoW8WCvlForpZYAMKtrUajyY0R8VErRpb0DidrSBQD7K9bq83oP/PUPf64BYF1lPetDyCN4RMg5J1zW/ITXevN0n3rN6m6UQ/rE8yF5KH+Z6ojJgoupb1Xo7HR9hXc9drppaFOGl4Tbcm0pZC8ABeH012wq21jzxHSgo5xwOmirFgjf86Wi3JcU8WRWMifILT8BAH0ezYbdkfRd37K5ZPFE7/xrOE1eJEXhBLCty6wfT8SmiEs7L6/8OmdmSxVI/HNAYT582X5D4v3CbhgS7VnaKH7huhm5bgrgt83infyLD4V08U43ThEWm9NyFfe2+jjiql4y1gwg0rmxYEYu8d/CxVMBPzbdiDhPls7IVHzrYiRtQRVFvOQ7btpVSj+0mmnehLT4ZVBJ1RhxT2mozYZMZtcS08k47DwHAWf6KZBF1nTirq3MwZaZOMttACBp0cFNzjpmzEcwOdUw6+T2tGSy5lhpMsK2vxHsebIeTimfZ9uXaj6f+R6OdSbFf4+kyTRtai+f27vESwtcvWIPx1oG8hvGjci6zLur+WSFxzwhuW1SfsMLpDzJu3Y4V8+I33PQdjbGNKzR5/Goz8DOWD3d8gJUkpG44sNpd2k47HW4ecZrms3ql6dY40Yp9QcXxXEmrW7vKQAAAABJRU5ErkJggg=="/>
+                </svg>
+            </li>
+            <li class="download-app__item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="47" viewBox="0 0 43 47">
+                    <image id="android-logo.svg" width="43" height="47" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAvCAYAAAB6zDPWAAACSElEQVRYhe2Zz1EbMRSHf/ZQwFJBTAfhaF1iKgDfdbArAFcAVACpwBx8j6kAc7GOoQNMBWwHyTzmKd55I63eJtaGg76ZPXj/SJ/W0pP2aYAEq+14BODJGneivJcOz84at1M89wrgLHVvUpYLWwJ4s8bdiPMVgAsA5wAmAKrA4zWADYBHAGtrXC3KoDK/WOPmKQ+tLEn89K3n39cAZhHBGCS6BrAgaf+vATiVjfhrWRa+AvANwDOLdpGUkNitL88ad695SC3Lwu//KCmprXHH2puH2htX2/FdQPSBDw0v/Dabf3fF5arQ9tkJ960mG2vcGfYDcJYo5pj7KQ3IH+IajYVNyuNI2ahl4NyIBxo4EqSY8OD6Gik/GRo1cTb0JnIwtcat28rV9NnzHkRV9WhkR4p7DkGyHo2spj8egr7q6QfNAOutxanwpQldMr7mpPXlfcjygmLmFxqaZV1u2OmCZ80HchqstuOZCPokPPcxb7Ud/+pL0Bo3wD62L8X0PqdoIOfmKnCub0LrkLthZBXVV2yNEaq/Uq+6PgNFNhdFNhdFNhdFNhdFNhdFNhdDTkdKVImyjITq35DslPNVNR/31rjF/zTl+kl4x07kN9V8MD719Jn8J3cWQ9NnFyLzl4Oa62lFm0WkZNpl4wNOsuMjhtxr8PhM+Hdr3MtBZBvSsS5xK/cbxHM3nC2XJP/6JiXO5qLI5qLI5qKr7KETdp3K6yr7GDnfunHRcj1WXpBOspxZpI03j884ts4+fJ02kpvTNk0kqUbuAfAbybS3FdGC4nAAAAAASUVORK5CYII="/>
+                </svg>
+            </li>
+            <li class="download-app__item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="41" viewBox="0 0 44 41">
+                    <image id="microsoft-logo.svg" width="44" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAApCAYAAABOScuyAAAAkklEQVRYhe3UoQ3CYBRF4fsTBqjBYtAM0R1gHiDpNjACkg3QNUxQi4KUhA3eEU3ON8DNES+vTYfdJ8W629jmxeHRl2+vqgdpBtMMphlMM5hmMM1gmsE0g2mLC14nuYD75PYytP31da4ufR63v833fVO+PZ/EqXo0yT+0fNsvQTOYZjDNYJrBNINpBtMMphmMSvIFSz0Ppf61ISYAAAAASUVORK5CYII="/>
+                </svg>
+            </li>
+        </ul>
+        <p class="download-app__text">
+            Доступно для Iphone, Ipad,Android,<br>
+            Windows Phone, OS X, Window 8
+        </p>
+    </section>
+    </div>
+</header>
+<main class="main-page">
+    <section class="features">
+    <h3 class="features__suggestion">Устали от серости<br>мегаполиса?</h3>
+    <h3 class="features__suggestion">Нам есть что вам <br>предложить!</h3>
+       <div class="features__wrapper">
+           <ul class="features-pictures">
+               <li class="features-pictures__item features-pictures__item--left"></li>
+               <li class="features-pictures__item features-pictures__item--center"></li>
+               <li class="features-pictures__item features-pictures__item--right"></li>
+           </ul>
+        <ul class="features-facilities">
+        <li class="features-facilities__item"><span>Поднимает настроение</span>
+        Приложение позволит вам победить осеннюю хандру и деперссию буквально в несколько кликов!
+        </li>
+        <li class="features-facilities__item"><span>Меняет мир вокруг</span>
+        Сделайте снимок и украсьте его смайликом или текстовой подписью,чтобы усилить эффект.
+        </li>
+        <li class="features-facilities__item"><span>Заводи новых друзей</span>
+        Ставьте лайки,комментируйте,делитесь фотографиями с друзбями и заводите новых
+        </li>
+        </ul>
+        <div class="features__iphone"></div>
+       </div>
+    </section>
+<section class="time-effect">
+    <div class="time-effect__wrapper">
+        <picture>
+            <source media="(min-width:1200px)" srcset="images/timer.png">
+            <img src="images/timer.png" alt="" height="276" width="238" class="time-effect__picture">
+        </picture>
+    </div>
+    <div class="time-effect__container">
+        <h2>Эффект<br> на 24 часа!</h2>
+        <p>Британские ученые провели исследования и доказали,
+        что положительный эффект от использования приложения
+        длится целые сутки!</p>
+        <a href="#">Узнать больше об исследовании</a>
+    </div>
+</section>
+    <section class="slider">
+        <input class="visually-hidden" class="slider__input" id="btn-1" name="switcher" type="radio" checked>
+        <input class="visually-hidden" class="slider__input" id="btn-2" name="switcher" type="radio">
+        <input class="visually-hidden" class="slider__input" id ="btn-3" name="switcher" type="radio">
+        <div class="slider__controls">
+            <label class="slider__switcher-label" for="btn-1"></label>
+            <label class="slider__switcher-label" for="btn-2"></label>
+            <label class="slider__switcher-label" for="btn-3"></label>
+        </div>
+        <ul class="slider-inner">
+            <li class="slider-inner__slide slider-inner--first">
+                <h3>Николай Петров</h3>
+                <p>
+                    "Это приложение перевернуло мой мир
+                и позволило по-новому взглянуть на привычные
+                серые вещи!А еще я познакомился со своей будущей
+                    женой в комментариях к выложенной фотографии!"
+                </p>
+            </li>
+            <li class="slider-inner__slide slider-inner--second">
+                <h3>Вася Иванов</h3>
+                <p>
+                    "Это знание  перевернуло мой мир
+                    и позволило по-новому взглянуть на привычные
+                    серые вещи!А еще я познакомился со своей будущей
+                    женой в комментариях к выложенной фотографии!"
+                </p>
+            </li>
+            <li class="slider-inner__slide slider-inner--third">
+                <h3>Саша Степанов</h3>
+                <p>
+                    "Эта задача перевернуло мой мир
+                    и позволило по-новому взглянуть на привычные
+                    серые вещи!А еще я познакомился со своей будущей
+                    женой в комментариях к выложенной фотографии!"
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section class="slider-map">
+        <input id="btn-4" type="radio" name="changer" class="visually-hidden checked">
+        <input id="btn-5" type="radio" name="changer" class="visually-hidden">
+        <input id="btn-6" type="radio" name="changer" class="visually-hidden">
+        <div class="slider-map__controls">
+            <label class="slider-map__label" for="btn-4"></label>
+            <label class="slider-map__label" for="btn-5"></label>
+            <label class="slider-map__label" for="btn-6"></label>
+        </div>
+        <div class="slider-map__inner">
+            <ul class="slider-map__menu slider-map__menu--first">
+                <li class="slider-map__item">
+
+                </li>
+                <li class="slider-map__item">
+                    Розовый фильтр
+                </li>
+                <li class="slider-map__item">
+                    Смайлики
+                </li>
+                <li class="slider-map__item">
+                    Комментарии
+                </li>
+            </ul>
+            <ul class="slider-map__menu slider-map__menu--second">
+                <li class="slider-map__item">
+                    <p>СТАНДАРТ</p>
+                    <p>2 USD</p>
+                </li>
+                <li class="slider-map__item">
+                    <p class="slider-map__item--invisible">розовый фильтр</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="0 0 31 21">
+                        <image id="yes.svg" width="31" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAVCAYAAAC+NTVfAAABBElEQVRIib3V3RGCMAwH8L8eAzCCbsAC3smdC7iBbuAGMIIb4Cby5KtugCM4ghcv8XohlIq0eeHT/JKW2sXmtkPCyAFcARQAHsuEcOHAn+ssMZw799oUnVvwBcA+dudD8JFOYnbuhWPiBwB3HxwLJ7hR984apph7zi34yF33gjpfAaj5mAwG4zQ3FYCOE0yJ068weNjdj0ISeH+kojGKHoWlc/0hWMlC4Rf9eYQWnzkvusMWMgIWXNKGEVj4d6n11iAnr2PBUOvcKqBSIyJb4t+wxqWAkhNKyBISeDsHbOEU7UABnbMXg8H1VHgIl8S6gHzk+Wy4D5gFHsNd6MnX1pRMCwBvqvNISJ1Kl1EAAAAASUVORK5CYII="/>
+                    </svg>
+                </li>
+                <li class="slider-map__item">
+                    <p class="slider-map__item--invisible">смайлики</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="0 0 31 21">
+                        <image id="yes.svg" width="31" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAVCAYAAAC+NTVfAAABBElEQVRIib3V3RGCMAwH8L8eAzCCbsAC3smdC7iBbuAGMIIb4Cby5KtugCM4ghcv8XohlIq0eeHT/JKW2sXmtkPCyAFcARQAHsuEcOHAn+ssMZw799oUnVvwBcA+dudD8JFOYnbuhWPiBwB3HxwLJ7hR984apph7zi34yF33gjpfAaj5mAwG4zQ3FYCOE0yJ068weNjdj0ISeH+kojGKHoWlc/0hWMlC4Rf9eYQWnzkvusMWMgIWXNKGEVj4d6n11iAnr2PBUOvcKqBSIyJb4t+wxqWAkhNKyBISeDsHbOEU7UABnbMXg8H1VHgIl8S6gHzk+Wy4D5gFHsNd6MnX1pRMCwBvqvNISJ1Kl1EAAAAASUVORK5CYII="/>
+                    </svg>
+                </li>
+                <li class="slider-map__item">
+                    <p class="slider-map__item--invisible">комментарии</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="26" viewBox="0 0 27 26">
+                        <image id="no.svg" width="27" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAYAAABGiCfwAAABM0lEQVRIia3W0Q2CMBAG4N9O4Ag8+awb6By+wAY6iW4Am+AGMIIjGCcwNdfkuFzba+ESItX2Pnslpbvv9TABOAKYAVwAfLBd7AGMIb+jG9DnSB22CA798zuaEQTYrMQaASHMzJfuJcBJdCwJbbzPf3G0Rh4c2I+yBNbQlmIIz4JjX3YrwRjUhYYTA2rBLKRhNaAJimEloBlKYSmwpXZbAuWwAN4F2LOLQ/cUZMF8PJUkrWh31C8ZFgyZ8shyR8OKbRJWrKV10qJXyqqGBbspkCxbT/1WYT7Jg7U/tEbh4u++R2L2WUyWR27Yg/KyTZU7isWgWfTT3u5RUMOsUDEosVKoCORYLWQGnbLB1kA58L9hO7o5iwGnCig13ucf+VGO/7N3JRTCj5eVWRzltj6kLpcCmH8Hs3B2PNXqygAAAABJRU5ErkJggg=="/>
+                    </svg>
+                </li>
+            </ul>
+            <ul class="slider-map__menu slider-map__menu--third">
+                <li class="slider-map__item">
+                    <p>База</p>
+                    <p>1 USD</p>
+                </li>
+                <li class="slider-map__item">
+                    <p class="slider-map__item--invisible">розовый фильтр</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="26" viewBox="0 0 27 26">
+                        <image id="no.svg" width="27" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAYAAABGiCfwAAABM0lEQVRIia3W0Q2CMBAG4N9O4Ag8+awb6By+wAY6iW4Am+AGMIIjGCcwNdfkuFzba+ESItX2Pnslpbvv9TABOAKYAVwAfLBd7AGMIb+jG9DnSB22CA798zuaEQTYrMQaASHMzJfuJcBJdCwJbbzPf3G0Rh4c2I+yBNbQlmIIz4JjX3YrwRjUhYYTA2rBLKRhNaAJimEloBlKYSmwpXZbAuWwAN4F2LOLQ/cUZMF8PJUkrWh31C8ZFgyZ8shyR8OKbRJWrKV10qJXyqqGBbspkCxbT/1WYT7Jg7U/tEbh4u++R2L2WUyWR27Yg/KyTZU7isWgWfTT3u5RUMOsUDEosVKoCORYLWQGnbLB1kA58L9hO7o5iwGnCig13ucf+VGO/7N3JRTCj5eVWRzltj6kLpcCmH8Hs3B2PNXqygAAAABJRU5ErkJggg=="/>
+                    </svg>
+                </li>
+                <li class="slider-map__item">
+                    <p class="slider-map__item--invisible">смайлики</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="26" viewBox="0 0 27 26">
+                        <image id="no.svg" width="27" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAYAAABGiCfwAAABM0lEQVRIia3W0Q2CMBAG4N9O4Ag8+awb6By+wAY6iW4Am+AGMIIjGCcwNdfkuFzba+ESItX2Pnslpbvv9TABOAKYAVwAfLBd7AGMIb+jG9DnSB22CA798zuaEQTYrMQaASHMzJfuJcBJdCwJbbzPf3G0Rh4c2I+yBNbQlmIIz4JjX3YrwRjUhYYTA2rBLKRhNaAJimEloBlKYSmwpXZbAuWwAN4F2LOLQ/cUZMF8PJUkrWh31C8ZFgyZ8shyR8OKbRJWrKV10qJXyqqGBbspkCxbT/1WYT7Jg7U/tEbh4u++R2L2WUyWR27Yg/KyTZU7isWgWfTT3u5RUMOsUDEosVKoCORYLWQGnbLB1kA58L9hO7o5iwGnCig13ucf+VGO/7N3JRTCj5eVWRzltj6kLpcCmH8Hs3B2PNXqygAAAABJRU5ErkJggg=="/>
+                    </svg>
+                </li>
+                <li class="slider-map__item">
+                    <p class="slider-map__item--invisible">комментарии</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="0 0 31 21">
+                        <image id="yes.svg" width="31" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAVCAYAAAC+NTVfAAABBElEQVRIib3V3RGCMAwH8L8eAzCCbsAC3smdC7iBbuAGMIIb4Cby5KtugCM4ghcv8XohlIq0eeHT/JKW2sXmtkPCyAFcARQAHsuEcOHAn+ssMZw799oUnVvwBcA+dudD8JFOYnbuhWPiBwB3HxwLJ7hR984apph7zi34yF33gjpfAaj5mAwG4zQ3FYCOE0yJ068weNjdj0ISeH+kojGKHoWlc/0hWMlC4Rf9eYQWnzkvusMWMgIWXNKGEVj4d6n11iAnr2PBUOvcKqBSIyJb4t+wxqWAkhNKyBISeDsHbOEU7UABnbMXg8H1VHgIl8S6gHzk+Wy4D5gFHsNd6MnX1pRMCwBvqvNISJ1Kl1EAAAAASUVORK5CYII="/>
+                    </svg>
+                </li>
+            </ul>
+            <ul class="slider-map__menu slider-map__menu--fourth">
+                <li class="slider-map__item">
+                    <p>Анлим</p>
+                    <p>3,99 USD</p>
+                </li>
+                <li class="slider-map__item">
+                    <p class="slider-map__item--invisible">розовый фильтр</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="0 0 31 21">
+                        <image id="yes.svg" width="31" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAVCAYAAAC+NTVfAAABBElEQVRIib3V3RGCMAwH8L8eAzCCbsAC3smdC7iBbuAGMIIb4Cby5KtugCM4ghcv8XohlIq0eeHT/JKW2sXmtkPCyAFcARQAHsuEcOHAn+ssMZw799oUnVvwBcA+dudD8JFOYnbuhWPiBwB3HxwLJ7hR984apph7zi34yF33gjpfAaj5mAwG4zQ3FYCOE0yJ068weNjdj0ISeH+kojGKHoWlc/0hWMlC4Rf9eYQWnzkvusMWMgIWXNKGEVj4d6n11iAnr2PBUOvcKqBSIyJb4t+wxqWAkhNKyBISeDsHbOEU7UABnbMXg8H1VHgIl8S6gHzk+Wy4D5gFHsNd6MnX1pRMCwBvqvNISJ1Kl1EAAAAASUVORK5CYII="/>
+                    </svg>
+                </li>
+                <li class="slider-map__item">
+                    <p class="slider-map__item--invisible">смайлики</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="0 0 31 21">
+                        <image id="yes.svg" width="31" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAVCAYAAAC+NTVfAAABBElEQVRIib3V3RGCMAwH8L8eAzCCbsAC3smdC7iBbuAGMIIb4Cby5KtugCM4ghcv8XohlIq0eeHT/JKW2sXmtkPCyAFcARQAHsuEcOHAn+ssMZw799oUnVvwBcA+dudD8JFOYnbuhWPiBwB3HxwLJ7hR984apph7zi34yF33gjpfAaj5mAwG4zQ3FYCOE0yJ068weNjdj0ISeH+kojGKHoWlc/0hWMlC4Rf9eYQWnzkvusMWMgIWXNKGEVj4d6n11iAnr2PBUOvcKqBSIyJb4t+wxqWAkhNKyBISeDsHbOEU7UABnbMXg8H1VHgIl8S6gHzk+Wy4D5gFHsNd6MnX1pRMCwBvqvNISJ1Kl1EAAAAASUVORK5CYII="/>
+                    </svg>
+                </li>
+                <li class="slider-map__item">
+                    <p class="slider-map__item--invisible">комментарии</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="21" viewBox="0 0 31 21">
+                        <image id="yes.svg" width="31" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAVCAYAAAC+NTVfAAABBElEQVRIib3V3RGCMAwH8L8eAzCCbsAC3smdC7iBbuAGMIIb4Cby5KtugCM4ghcv8XohlIq0eeHT/JKW2sXmtkPCyAFcARQAHsuEcOHAn+ssMZw799oUnVvwBcA+dudD8JFOYnbuhWPiBwB3HxwLJ7hR984apph7zi34yF33gjpfAaj5mAwG4zQ3FYCOE0yJ068weNjdj0ISeH+kojGKHoWlc/0hWMlC4Rf9eYQWnzkvusMWMgIWXNKGEVj4d6n11iAnr2PBUOvcKqBSIyJb4t+wxqWAkhNKyBISeDsHbOEU7UABnbMXg8H1VHgIl8S6gHzk+Wy4D5gFHsNd6MnX1pRMCwBvqvNISJ1Kl1EAAAAASUVORK5CYII="/>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="page-footer__iframe">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaf161a97ae29332906f701f47b18c9c567f74b7d20765b576fa387d5f9ed69a9&amp;source=constructor"
+            width="100%" height="614" frameborder="0"></iframe>
+</div>
+    <div class="page-footer__contacts">
+  <p class="page-footer__questions">
+      Остались вопросы?<br>
+      Свяжитесь с нами!
+  </p>
+        <ul class="page-footer__points">
+            <li class="page-footer__item">
+        <span>Звоните:</span>
+        <p class="page-footer__call  page-footer--text">
+            +7(812) 555 66 66
+        </p>
+            </li>
+            <li class="page-footer__item">
+        <span>Пишите:</span>
+        <p class="page-footer__write page-footer--text">
+            mail@htmlAcademy.ru
+        </p>
+            </li>
+            <li class="page-footer__item">
+            <span>Приезжайте в гости:</span>
+        <p class="page-footer__address page-footer--text">
+            ул.Большая
+            Конюшенная, 19/8
+        </p>
+            </li>
+        </ul>
+        </div>
+    <div class="footer-block">
+        <div class="footer-block__wrapper">
+    <div class="footer-block__cage">
+        <picture>
+            <source media="(min-width:1100px)" srcset="images/logotype-desktop.png">
+            <img src="images/logotype-tablet.png" alt="">
+        </picture>
+    </div>
+        <ul class="footer-block__pagination">
+            <li class="footer-block__item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14">
+                    <image id="twitter.svg" width="18" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAYAAAAi2ky3AAAA40lEQVQokZ2TwREBQRBFnykBbAiObjYEGeDiTASIABEgAjJABISgJEAGhKA+3WpqsYNftZeZ3jf/9/RUjvVuxkNXyjUBBoDX74EO0NRaAIbADshLMEtgHEEwwAVYA41gi7nBhm8g2usl3LZDFEmnzYCT/VjzogTkoIhVyxqrZlGwQ1K92woWLPun4ixy9kl3I8GIWaK4TFcHrez7R2frEX5rC1v8VRuvd9D5z3iLIkg5+z+6msb1DpJkc/QlTD3Vk3lKc6QR1/Smrtmdy8m8uCGQIml6W/4A3wA0KxoTOXmdOeAGlKEtkFljNbgAAAAASUVORK5CYII="/>
+                </svg>
+            </li>
+            <li class="footer-block__item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="18" viewBox="0 0 9 18">
+                    <image id="facebook.svg" width="9" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAYAAACJgPRIAAAAdklEQVQokdWOsQ2AMBADj4gBMgIlJSPAEqwRmACYiBHICBETIVCCniiRKGhwZb1Pfhd73SM0AAao5LEUfgYmElLiZFKAbGoAHWULYCUUA3jghlrfFEv77IK2zJQ1GJUBHnoFne867+O3I+ACZDMFLmTfbfonBBypYw2/NKvu/gAAAABJRU5ErkJggg=="/>
+                </svg>
+            </li>
+            <li class="footer-block__item">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="13" viewBox="0 0 15 13">
+                    <image id="youtube.svg" width="15" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAAAnUlEQVQokZ2SwQ3CMBAEB5QCKIH8KCN0AB/e6SShA6ggdAAdmBrSAOkglIBWOiOLoHBmPvZn9rzWLfrNYQRWwB042uliaaKogAA8gNorf7IGOkAvapNwlxyR1FhIZ6FuOaW2OsHqZcmR9F92uXJEFa7/ygOwz5W1A1ugBG6FU7rYAmnimzn5CZyBk90nfJOVrimaNos6x9S0z08R4AWPfx0s4sYgwwAAAABJRU5ErkJggg=="/>
+                </svg>
+            </li>
+        </ul>
+        <div class="footer-block__developed">
+            <span>Разработано</span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" viewBox="0 0 27 34">
+                <image id="htmlacademy.svg" width="27" height="34"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAYAAACuoaIwAAADVUlEQVRIia1W63HaQBA+jkMI0CtgjB+ZQTNuQKkgdBCngiQdOBXYqSDjClwC6YB0YBrwGDL2bx5mggAhZT6F9RxCL2zvjCx0t7ff7nf7cIFF5KxtW4wxB6ujybiDt+et277v2wELLN/3HTrBOe8XWGHMOR8IURxi7Z1p/d5s9++Gg7FsvVC3rN5yucJvZ+2vYYwtlsuoD2SclRXl+Rt60I8T6EG/yIsA7CtKiRUqqhrMXZcJIVhJiPBYkRdD74Qo9jnnE8752NSNPtbuhgPyHCyEkU+epo7v+3DU9Lx1GPnaX4d7K89jnuexiqoy/AnwnLVtO9bFVwrsEkYYGczNXXfn/t5KCIPva++kddTRa1oX7719oRCz9EAHQDjnga5pAd6Gpt9ssjcfRhYYjNUt66okxKisKKODev0C63FrrwJrNhrnarl8nxQFosU69quVyn0StalgMKJVaz0YqVWrt1n3g33ohRTXtG40s2PBiDIhRJCHnqi0ms2vOIfzsENM7IBBMY2yvCI7DHu4ii0wAOSljP1Pjp7seZzQVZQVJbS9BdZsNG7yeg96KRPBSJru8eHhzQ6YRF9m2zpsHCCqDtUdImg1m46sg29Ksi0wPMQzPMbvNDDLMLuUBO+PT85BP74tw/hJ5QD6KPKkbHxO+bS6OWvbDhU1JQGoBQBsZWajbAwgAEuqG1PXe5v1kEqAGJo+YozBTkirrE8YsY14uVo6lmF+swzjh7twO38eH25lT3VNv155K2f4+NArlYSFmTWdPWWXSlxkyEwpqudEIMrYJkkQEUUjP0mRJbUri4qcEkamVqZsHzARF+3TbHbxdz7/eHp0/Hk0GZ9PZ7NLd7H4UqtWv1crFXsynV5mUhYjsXema9ovP/Dt4ePDLf6vaJ++/8ALfDCaTLquu/ikquogyaBaLg8s07yO3UwbMfLMAq3yyIlSR3THtbB9hqctdwoaJwSSVB6JYDiU1YQpQVCwlCBphc+kOQfdEIdmUF4vQRVA0lqazAbsbjVs8Iy+Bq9l/pOMpQndM+xI/XK34KlT031k0RSlDPpyrUUnQaxEqcXBJGrl5r1DWV6RxztRIqd21v6LJOo56uykdXSFd57IXyRU0HIhy435zYWoo8m+F2WMsX8/JdJlhxHeQwAAAABJRU5ErkJggg=="/>
+            </svg>
+        </div>
+        </div>
+    </div>
+</footer>
+<script>
+    let navigation = document.querySelector('.header-navigation');
+    let close = document.querySelector('.header-navigation__close');
+    let open = document.querySelector('.header-navigation__open');
+
+    close.addEventListener('click',function(){
+        navigation.classList.remove('header-navigation--opened');
+        navigation.classList.add('header-navigation--closed');
+        open.classList.remove('visually-hidden');
+    });
+
+    open.addEventListener('click',function(){
+       navigation.classList.remove('header-navigation--closed');
+       navigation.classList.add('header-navigation--opened');
+    });
+
+</script>
+</body>
+</html>
