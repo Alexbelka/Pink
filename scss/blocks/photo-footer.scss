@@ -1,0 +1,30 @@
+.photo-footer{
+  min-width: 320px;
+  min-height: 284px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0 1px 1px;
+}
+
+.photo-footer__developer{
+ font-family: "Open Sans", sans-serif;
+ font-size:14px;
+  line-height: 18px;
+  color:rgb(97,108,119);
+}
+
+.photo-footer__developer{
+  min-width:110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media(min-width:660px){
+  .photo-footer{
+   flex-direction: row;
+    min-height: 127px;
+  }
+}

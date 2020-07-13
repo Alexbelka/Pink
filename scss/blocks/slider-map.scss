@@ -19,21 +19,25 @@
 .slider-map__label{
   width: 15px;
   height: 15px;
-  border:1px solid black;
-  border-radius:50%;
+  box-shadow: inset 0  0 2px 2px rgb(255,255,255);
   cursor: pointer;
+  background-color: rgb(200,200,200);
+  border-radius:50%;
 }
 
 #btn-4:checked ~.slider-map__controls label[for="btn-4"]{
-  background-color: black;
+  box-shadow: inset 0  0 2px 2px rgb(0,0,0);
+  background-color: rgb(255,255,255);
 }
 
 #btn-5:checked ~.slider-map__controls label[for="btn-5"]{
-  background-color: black;
+  box-shadow: inset 0  0 2px 2px rgb(0,0,0);
+  background-color: rgb(255,255,255);
 }
 
 #btn-6:checked ~.slider-map__controls label[for="btn-6"]{
-  background-color: black;
+  box-shadow: inset 0  0 2px 2px rgb(0,0,0);
+  background-color: rgb(255,255,255);
 }
 
 

@@ -22,12 +22,23 @@
 
 .features__iphone{
   width:(157/320)*100%;
-  min-height: 330px;
-  margin:auto;
+  min-height: 360px;
+  margin:35px auto 0;
   background: url('../../images/iphone-screen.png') 50% 5% no-repeat;
   background-size: 80%;
-  margin-top: 35px;
+  position:relative;
 }
+
+.features__iphone:before{
+  content:" ";
+  position:absolute;
+  width:100%;
+  min-height: 47px;
+  background-color: rgb(255,255,255);
+  bottom:0;
+}
+
+
 
 @media(min-width:$tablet-width){
 

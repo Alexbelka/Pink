@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="photo-page">
+<header class="page-header">
+    <nav class="header-navigation header-navigation--opened">
+        <ul class="header-navigation__menu">
+            <li class="header-navigation__item header-navigation__item--active">
+                <a href="#">
+                    <picture>
+                        <source media="(min-width:660px)" srcset="images/logotablet.png">
+                        <source media="(min-width:960px)" srcset="images/logodesktop.png">
+                        <img src="images/logotype.png"  width="75" height="22" alt="">
+                    </picture>
+                </a>
+                <button class="header-navigation__close">
+                    <span class="visually-hidden">Закрыть меню</span>
+                </button>
+                <button class="header-navigation__open visually-hidden">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+            </li>
+            <li class="header-navigation__item header-navigation__item--element"><a href="#">главная</a></li>
+            <li class="header-navigation__item header-navigation__item--element"><a href="#">фотографии</a></li>
+            <li class="header-navigation__item header-navigation__item--element"><a href="#">конкурс</a></li>
+            <li class="header-navigation__item header-navigation__item--element"><a href="#">html academy</a></li>
+        </ul>
+    </nav>
+    <div class="section__wrapper">
+        <section class="iphone-hand">
+            <h2 class="iphone-hand__title">Фотографии <br> пользователей</h2>
+        </section>
+    </div>
+</header>
+<main class="photo-main">
+<section class="main-text">
+    <p class="main-text__title">
+        Взгляните на фотографи, которые<br>
+        выкладывают пользователи!<br>
+        Видите, как не хватает ваших??
+    </p>
+</section>
+    <section class="panorama">
+        <ul class="panorama-card">
+            <li class="panorama-card__item panorama-card__item-picture"></li>
+            <li class="panorama-card__item panorama-card__item-text">
+                <p class="panorama-card__item-name">Анна<span>(5 минут назад)</span></p>
+                <p class="panorama-card__item-comment">
+                    Прыгать или нет? Напишите в комментарии свой ответ
+                    и смотрите прямую трансляцию в перископе, задавайте вопросы!
+                </p>
+                <div class="panorama-card__item-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12">
+                        <image id="icon-heart.svg" width="13" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAA0ElEQVQokY2SzRHBcBDFfzIKSAmOjnRAB06u6CAqMCqgg9CBDqQDRgXpgA6YF2/NX8ZMvEsmu+8ju5vebTgHWAIbYMAbNXAEFq3aFjj0LSjdOPk5s0nUHilPSXcgB8bA1cSJRXKuXBsBFxlI9HRjSjfOMsxMy/8QfHiZUxRddAhK8yqJ1h5052F/oXBPvFXm4TWPCnJrC/UuQ/XFq2MmCZUoiKDPiNXLKATNdkMkHBTtYbWl9H4yjHOg46aQUCKlhUBGqn+QJgX2Can5bb66wAu6ADLF16P3EAAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    <p class="panorama-card__item-like">
+                        нравится:215
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="photos">
+    <ul class="photos-range">
+        <li class="photos-range__item photos-range__item-image photos-range__item-car"></li>
+        <li class="photos-range__item photos-range__item-text">
+            <p class="photos-range__item-name">Левон <span>(5 минут назад)</span></p>
+            <p class="photos-range__item-comment">
+                Вчера он на луну летал, сегодня в <br> руки к нам попал
+            </p>
+            <div class="photos-range__item-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12">
+                    <image id="icon-heart.svg" width="13" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAA0ElEQVQokY2SzRHBcBDFfzIKSAmOjnRAB06u6CAqMCqgg9CBDqQDRgXpgA6YF2/NX8ZMvEsmu+8ju5vebTgHWAIbYMAbNXAEFq3aFjj0LSjdOPk5s0nUHilPSXcgB8bA1cSJRXKuXBsBFxlI9HRjSjfOMsxMy/8QfHiZUxRddAhK8yqJ1h5052F/oXBPvFXm4TWPCnJrC/UuQ/XFq2MmCZUoiKDPiNXLKATNdkMkHBTtYbWl9H4yjHOg46aQUCKlhUBGqn+QJgX2Can5bb66wAu6ADLF16P3EAAAAABJRU5ErkJggg=="/>
+                </svg>
+                <p class="photos-range__item-like">
+                    нравится:356
+                </p>
+            </div>
+        </li>
+    </ul>
+        <ul class="photos-range">
+            <li class="photos-range__item photos-range__item-image photos-range__item-drum"></li>
+            <li class="photos-range__item photos-range__item-text">
+                <p class="photos-range__item-name">Антон <span>(5 минут назад)</span></p>
+                <p class="photos-range__item-comment">
+                    Соседи будут рады!
+                </p>
+                <div class="photos-range__item-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12">
+                        <image id="icon-heart.svg" width="13" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAA0ElEQVQokY2SzRHBcBDFfzIKSAmOjnRAB06u6CAqMCqgg9CBDqQDRgXpgA6YF2/NX8ZMvEsmu+8ju5vebTgHWAIbYMAbNXAEFq3aFjj0LSjdOPk5s0nUHilPSXcgB8bA1cSJRXKuXBsBFxlI9HRjSjfOMsxMy/8QfHiZUxRddAhK8yqJ1h5052F/oXBPvFXm4TWPCnJrC/UuQ/XFq2MmCZUoiKDPiNXLKATNdkMkHBTtYbWl9H4yjHOg46aQUCKlhUBGqn+QJgX2Can5bb66wAu6ADLF16P3EAAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    <p class="photos-range__item-like">
+                        нравится:686
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="photos-range">
+            <li class="photos-range__item photos-range__item-image photos-range__item-window"></li>
+            <li class="photos-range__item photos-range__item-text">
+                <p class="photos-range__item-name">Борис <span>(5 минут назад)</span></p>
+                <p class="photos-range__item-comment">
+                    Здесь могла бы быть ваша цитата о<br> высоком и вечном.
+                </p>
+                <div class="photos-range__item-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12">
+                        <image id="icon-heart.svg" width="13" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAA0ElEQVQokY2SzRHBcBDFfzIKSAmOjnRAB06u6CAqMCqgg9CBDqQDRgXpgA6YF2/NX8ZMvEsmu+8ju5vebTgHWAIbYMAbNXAEFq3aFjj0LSjdOPk5s0nUHilPSXcgB8bA1cSJRXKuXBsBFxlI9HRjSjfOMsxMy/8QfHiZUxRddAhK8yqJ1h5052F/oXBPvFXm4TWPCnJrC/UuQ/XFq2MmCZUoiKDPiNXLKATNdkMkHBTtYbWl9H4yjHOg46aQUCKlhUBGqn+QJgX2Can5bb66wAu6ADLF16P3EAAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    <p class="photos-range__item-like">
+                        нравится:215
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="photos-range">
+            <li class="photos-range__item photos-range__item-image photos-range__item-foodCort"></li>
+            <li class="photos-range__item photos-range__item-text">
+                <p class="photos-range__item-name">Сергей <span>(5 минут назад)</span></p>
+                <p class="photos-range__item-comment">
+                    Самая кубанская в мире!
+                </p>
+                <div class="photos-range__item-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12">
+                        <image id="icon-heart.svg" width="13" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAA0ElEQVQokY2SzRHBcBDFfzIKSAmOjnRAB06u6CAqMCqgg9CBDqQDRgXpgA6YF2/NX8ZMvEsmu+8ju5vebTgHWAIbYMAbNXAEFq3aFjj0LSjdOPk5s0nUHilPSXcgB8bA1cSJRXKuXBsBFxlI9HRjSjfOMsxMy/8QfHiZUxRddAhK8yqJ1h5052F/oXBPvFXm4TWPCnJrC/UuQ/XFq2MmCZUoiKDPiNXLKATNdkMkHBTtYbWl9H4yjHOg46aQUCKlhUBGqn+QJgX2Can5bb66wAu6ADLF16P3EAAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    <p class="photos-range__item-like">
+                        нравится:4
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="photos-range">
+            <li class="photos-range__item photos-range__item-image photos-range__item-legs"></li>
+            <li class="photos-range__item photos-range__item-text">
+                <p class="photos-range__item-name">Максим <span>(5 минут назад)</span></p>
+                <p class="photos-range__item-comment">
+                    Где снег-то?
+                </p>
+                <div class="photos-range__item-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12">
+                        <image id="icon-heart.svg" width="13" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAA0ElEQVQokY2SzRHBcBDFfzIKSAmOjnRAB06u6CAqMCqgg9CBDqQDRgXpgA6YF2/NX8ZMvEsmu+8ju5vebTgHWAIbYMAbNXAEFq3aFjj0LSjdOPk5s0nUHilPSXcgB8bA1cSJRXKuXBsBFxlI9HRjSjfOMsxMy/8QfHiZUxRddAhK8yqJ1h5052F/oXBPvFXm4TWPCnJrC/UuQ/XFq2MmCZUoiKDPiNXLKATNdkMkHBTtYbWl9H4yjHOg46aQUCKlhUBGqn+QJgX2Can5bb66wAu6ADLF16P3EAAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    <p class="photos-range__item-like">
+                        нравится:150
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="photos-range">
+            <li class="photos-range__item  photos-range__item-plane photos-range__item-image"></li>
+            <li class="photos-range__item photos-range__item-text">
+                <p class="photos-range__item-name">Надежда <span>(5 минут назад)</span></p>
+                <p class="photos-range__item-comment">
+                  Всем GM и взаимные лайки!
+                </p>
+                <div class="photos-range__item-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12">
+                        <image id="icon-heart.svg" width="13" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAYAAAC5tzfZAAAA0ElEQVQokY2SzRHBcBDFfzIKSAmOjnRAB06u6CAqMCqgg9CBDqQDRgXpgA6YF2/NX8ZMvEsmu+8ju5vebTgHWAIbYMAbNXAEFq3aFjj0LSjdOPk5s0nUHilPSXcgB8bA1cSJRXKuXBsBFxlI9HRjSjfOMsxMy/8QfHiZUxRddAhK8yqJ1h5052F/oXBPvFXm4TWPCnJrC/UuQ/XFq2MmCZUoiKDPiNXLKATNdkMkHBTtYbWl9H4yjHOg46aQUCKlhUBGqn+QJgX2Can5bb66wAu6ADLF16P3EAAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    <p class="photos-range__item-like">
+                        нравится:2560
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="suggestion">
+        <p class="suggestion__text">
+            Затмите их всех!<br>
+            Выкладывайте все, что накопилось<br> в телефоне!
+        </p>
+    </section>
+    <section class="filter-photo">
+        <ul class="filter-photo__post">
+            <li class="filter-photo__post-item filter-photo__post-item--picture"></li>
+            <li class="filter-photo__post-item filter-photo__post-item--setting">
+                <div class="filter-photo__post--wrapper">
+                    <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+                        <image id="crop.svg" width="44" height="44" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAxElEQVRYhe2XzQ2DMAyFH4hB6I1x6IU9mIRR2llYoN2ECglxyCE2Pw8S9X2STyThk+VYTjE2HQym4HNhbWBS3vnzPUiYjYTZSJhNufTZWFhY+z3xAdDmlOEawMsjnVpJDNaC1IRra0HlmA2sOj46W3juyYraGhsJs5EwGwmzkTAbCbORMJvshKsEHDbN0yoJNn9Rw5veYGfjyfD3TsEQj3B/rVIcj/AbwDOVTHsv3Sz9WHrm2RESPV9tjY2E2UiYTV7CAH4+bSWyAe+pkgAAAABJRU5ErkJggg=="/>
+                    </svg>
+                        <input type="range" class="filter-photo__post-range">
+                    </div>
+                    <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="43" viewBox="0 0 48 43">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    opacity: 1;
+                                }
+                            </style>
+                        </defs>
+                        <image id="fill.svg" class="cls-1" width="48" height="43" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAArCAYAAAA+EwvfAAABrklEQVRoge2YPW/CMBCG31ZlYaBDZ9a0Ujuw0KFLp4792yzM/QVdsrAwsLCgVD4pjXxn+84fIOWRkIgNyfskl8T23cv7F5RsADwC2AE4a3di5d4Qfg1gBeADwOKWBF5deKKphEbg11MyzSQ0Akem7ptIaO+Bq5HQCuBaJCwCcBJ7T3s1CavAEPCN6asiYRFYuIAr4TfFJbQCXPhz7XtCIyCF39W+sVMFQuGPtZ9OKQIx4YlqErECKeGJKhIxAprwRHGJkIAlPFFUQhLIEZ4oJiEJbDOFJySJrWJ/f0gCT5NtS3iCk5geK5qHhN8Ol/nTEL4I0hU4VMyhPpYksDeWSyzckDwKSSBHzYfg7omN+wQJvQdKSnDhn92qx9p9F4l5E5eQkJ5G3Wi7Cz2hYsdCOSW48GDKRiyllNFoyfcAXMksPe3LyULaP1LnAyXexETHtEPq08zIco6FxvjOPsH2aefEOUajWbCsSljmAz5Omj7rupBmRsbxo+mzCowlxuOZg6JsejekGJ/tk2vruT+ljEYlSMJKL4X1keMKNGUWaM0s0JrhKfR9ywJzCTUFwAUTepi95+exTgAAAABJRU5ErkJggg=="/>
+                    </svg>
+                        <input type="range" class="filter-photo__post-range">
+                    </div>
+                    <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    opacity: 1;
+                                }
+                            </style>
+                        </defs>
+                        <image id="contrast.svg" class="cls-1" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACQUlEQVRYhb1XsU7DMBQ8AhESQxjCUIQqoSIKYysEAwML4sPLwAhdGOjQpUOzRAiEWCIh5OoeMq/PTkgjTvIS23dnv2f7Zev86g4NkQE4BJCzWSjZlgDem9DuNBjTBzCggTqIuSENzAEs2hrYAzCKrLYOGee7BUwBfFrjkwBJD8DNBuI+cnL1rE5rB/p0HkLBOL+p/n2KWUIpgEvuxK+QaAO9iPiMMa0C/SX7U+bM0Bgz4vxCPvgh2AuIu2SaAHiJiPuoOHYSOAkjaq0ZGNG9Fn+oOVLXbGc+cWRu6i9UDPSNhBOCulX7R+9WLaQKmMip+WNgYBA/NdxyjT6zXu6NilwaAzGQGZfMrOlNFoALxdjbiXdy+ljpJrxeNeYbiAsydRIszsPEiH3RcustDFQ+FGpMbhkoOxIX+BeT5s6tq1jfcJsii3GH3oIusR/j+g8D0Xz6DwPR42wZiG5ZC/hxX+NOrMzsUPxTHb21E2cZ6BmPUls8e/NSo1ZYGVga5Nbb8Fcs1OotzmXCJNGJMmxYhIYwZ/Uj0NcyRFeS0Lqnxy1CUfL51Vs/NsauNKUkWxg1QcZCo64mmDHZSqPyTcmhd7OU2tA/hlNDKAsQ+HghmRYPza388GwfHJ34HR8AjtSEXQDHALYYt6+IGVn1KYALztV4BPAq33RVXNCdVZwO2dqU5YKpfpKt/4IFd8MqUkGBmIiFyhJ3CL0FbuB9R7VBSa41cYfYv6FLKncC/vJz6sPli0tQU7iJAYELiWvd/54D+AYEIIkjOti1eAAAAABJRU5ErkJggg=="/>
+                    </svg>
+                        <input type="range" class="filter-photo__post-range">
+                    </div>
+                </div>
+                <input type="range" class="filter-photo__post-after--range">
+                <input type="submit" class="filter-photo__post-post" value="Запостить">
+                <input type="submit" class="filter-photo__post-aband" value="Отмена">
+            </li>
+        </ul>
+    </section>
+</main>
+<footer class="photo-footer">
+    <div>
+    <img src="images/logotype-tablet.png" alt="Логотип">
+    </div>
+    <ul class="footer-contacts">
+        <li class="footer-contacts__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14">
+                <image id="twitter.svg" width="18" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAYAAAAi2ky3AAAA40lEQVQokZ2TwREBQRBFnykBbAiObjYEGeDiTASIABEgAjJABISgJEAGhKA+3WpqsYNftZeZ3jf/9/RUjvVuxkNXyjUBBoDX74EO0NRaAIbADshLMEtgHEEwwAVYA41gi7nBhm8g2usl3LZDFEmnzYCT/VjzogTkoIhVyxqrZlGwQ1K92woWLPun4ixy9kl3I8GIWaK4TFcHrez7R2frEX5rC1v8VRuvd9D5z3iLIkg5+z+6msb1DpJkc/QlTD3Vk3lKc6QR1/Smrtmdy8m8uCGQIml6W/4A3wA0KxoTOXmdOeAGlKEtkFljNbgAAAAASUVORK5CYII="/>
+            </svg>
+        </li>
+        <li class="footer-contacts__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="18" viewBox="0 0 9 18">
+                <image id="facebook.svg" width="9" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAYAAACJgPRIAAAAdklEQVQokdWOsQ2AMBADj4gBMgIlJSPAEqwRmACYiBHICBETIVCCniiRKGhwZb1Pfhd73SM0AAao5LEUfgYmElLiZFKAbGoAHWULYCUUA3jghlrfFEv77IK2zJQ1GJUBHnoFne867+O3I+ACZDMFLmTfbfonBBypYw2/NKvu/gAAAABJRU5ErkJggg=="/>
+            </svg>
+        </li>
+        <li class="footer-contacts__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="13" viewBox="0 0 15 13">
+                <image id="youtube.svg" width="15" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAAAnUlEQVQokZ2SwQ3CMBAEB5QCKIH8KCN0AB/e6SShA6ggdAAdmBrSAOkglIBWOiOLoHBmPvZn9rzWLfrNYQRWwB042uliaaKogAA8gNorf7IGOkAvapNwlxyR1FhIZ6FuOaW2OsHqZcmR9F92uXJEFa7/ygOwz5W1A1ugBG6FU7rYAmnimzn5CZyBk90nfJOVrimaNos6x9S0z08R4AWPfx0s4sYgwwAAAABJRU5ErkJggg=="/>
+            </svg>
+        </li>
+    </ul>
+    <div class="photo-footer__developer">
+        <p class="photo-footer__developer-text">Разработано</p>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" viewBox="0 0 27 34">
+            <image id="htmlacademy.svg" width="27" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAYAAACuoaIwAAADVUlEQVRIia1W63HaQBA+jkMI0CtgjB+ZQTNuQKkgdBCngiQdOBXYqSDjClwC6YB0YBrwGDL2bx5mggAhZT6F9RxCL2zvjCx0t7ff7nf7cIFF5KxtW4wxB6ujybiDt+et277v2wELLN/3HTrBOe8XWGHMOR8IURxi7Z1p/d5s9++Gg7FsvVC3rN5yucJvZ+2vYYwtlsuoD2SclRXl+Rt60I8T6EG/yIsA7CtKiRUqqhrMXZcJIVhJiPBYkRdD74Qo9jnnE8752NSNPtbuhgPyHCyEkU+epo7v+3DU9Lx1GPnaX4d7K89jnuexiqoy/AnwnLVtO9bFVwrsEkYYGczNXXfn/t5KCIPva++kddTRa1oX7719oRCz9EAHQDjnga5pAd6Gpt9ssjcfRhYYjNUt66okxKisKKODev0C63FrrwJrNhrnarl8nxQFosU69quVyn0StalgMKJVaz0YqVWrt1n3g33ohRTXtG40s2PBiDIhRJCHnqi0ms2vOIfzsENM7IBBMY2yvCI7DHu4ii0wAOSljP1Pjp7seZzQVZQVJbS9BdZsNG7yeg96KRPBSJru8eHhzQ6YRF9m2zpsHCCqDtUdImg1m46sg29Ksi0wPMQzPMbvNDDLMLuUBO+PT85BP74tw/hJ5QD6KPKkbHxO+bS6OWvbDhU1JQGoBQBsZWajbAwgAEuqG1PXe5v1kEqAGJo+YozBTkirrE8YsY14uVo6lmF+swzjh7twO38eH25lT3VNv155K2f4+NArlYSFmTWdPWWXSlxkyEwpqudEIMrYJkkQEUUjP0mRJbUri4qcEkamVqZsHzARF+3TbHbxdz7/eHp0/Hk0GZ9PZ7NLd7H4UqtWv1crFXsynV5mUhYjsXema9ovP/Dt4ePDLf6vaJ++/8ALfDCaTLquu/ikquogyaBaLg8s07yO3UwbMfLMAq3yyIlSR3THtbB9hqctdwoaJwSSVB6JYDiU1YQpQVCwlCBphc+kOQfdEIdmUF4vQRVA0lqazAbsbjVs8Iy+Bq9l/pOMpQndM+xI/XK34KlT031k0RSlDPpyrUUnQaxEqcXBJGrl5r1DWV6RxztRIqd21v6LJOo56uykdXSFd57IXyRU0HIhy435zYWoo8m+F2WMsX8/JdJlhxHeQwAAAABJRU5ErkJggg=="/>
+        </svg>
+    </div>
+</footer>
+</body>
+</html>

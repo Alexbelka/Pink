@@ -1,0 +1,45 @@
+.achievement{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.achievement__label{
+  margin-top: 42px;
+  position: relative;
+  padding-left: (50/280)*100%;
+}
+
+.achievement__span{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border:1px solid rgb(209,209,209);
+  top:-50%;
+  left:0;
+  cursor:pointer;
+}
+.achievement__input:checked +.achievement__span{
+  background: url('../../svg/tick.svg');
+}
+
+@media(min-width:768px){
+  .achievement{
+    box-shadow: 0 0 1px 1px rgb(229,229,229);
+    padding: 0 0 30px 60px;
+    position: relative;
+  }
+
+  .achievement__title{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(255,255,255);
+  }
+
+  .achievement__title br{
+    display: none;
+  }
+
+}

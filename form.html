@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="form-page">
+<header class="page-header">
+    <nav class="header-navigation header-navigation--opened">
+        <ul class="header-navigation__menu">
+            <li class="header-navigation__item header-navigation__item--active">
+                <a href="#">
+                    <picture>
+                        <source media="(min-width:660px)" srcset="images/logotablet.png">
+                        <source media="(min-width:960px)" srcset="images/logodesktop.png">
+                        <img src="images/logotype.png"  width="75" height="22" alt="">
+                    </picture>
+                </a>
+                <button class="header-navigation__close">
+                    <span class="visually-hidden">Закрыть меню</span>
+                </button>
+                <button class="header-navigation__open visually-hidden">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+            </li>
+            <li class="header-navigation__item header-navigation__item--element"><a href="#">главная</a></li>
+            <li class="header-navigation__item header-navigation__item--element"><a href="#">фотографии</a></li>
+            <li class="header-navigation__item header-navigation__item--element"><a href="#">конкурс</a></li>
+            <li class="header-navigation__item header-navigation__item--element"><a href="#">html academy</a></li>
+        </ul>
+    </nav>
+    <div class="section__wrapper">
+        <section class="iphone-hand">
+            <h2 class="iphone-hand__title">Конкурс на самое <br>безбашенное<br> путешествие с Пинк</h2>
+        </section>
+    </div>
+</header>
+<main class="form-main">
+<h2 class="form-title">
+    Поделитесь своей историей и получите шанс выиграть
+    ценный приз - 1000 миль на бонусую карту!
+</h2>
+    <form action="" class="form-form">
+    <section class="personal-data">
+        <div class="personal-data__wrapper">
+        <label class="personal-data__label" for="suname">Фамилия:</label>
+        <input class="personal-data__input" id="suname" type="text" placeholder="Укажите фамилию">
+        </div>
+        <div class="personal-data__wrapper">
+        <label class="personal-data__label" for="name">Имя:</label>
+        <input class="personal-data__input" id="name" type="text" placeholder="Введите ваше имя">
+        </div>
+        <div class="personal-data__wrapper">
+        <label class="personal-data__label" for="patronymic">Отчество:</label>
+        <input class="personal-data__input" id="patronymic" type="text" placeholder="Ну и отчество тоже">
+        </div>
+    </section>
+    <section class="achievement">
+        <h2 class="achievement__title  form-form__title">
+            Ваши безбашенные<br>
+            достижения в путешествии
+        </h2>
+        <label class="achievement__label">
+            <input class="achievement__input visually-hidden" type="checkbox">
+                <span class="achievement__span"></span>
+            Сделал селфи с акулой
+        </label>
+        <label class="achievement__label">
+            <input class="achievement__input visually-hidden" type="checkbox">
+            <span class="achievement__span"></span>
+           Обгорел на пляже
+        </label>
+        <label class="achievement__label">
+            <input class="achievement__input visually-hidden" type="checkbox">
+            <span class="achievement__span"></span>
+            Видел Чака Норриса
+        </label>
+        <label class="achievement__label">
+            <input class="achievement__input visually-hidden" type="checkbox">
+            <span class="achievement__span"></span>
+            Накопил сувениров
+        </label>
+        <label class="achievement__label">
+            <input class="achievement__input visually-hidden" type="checkbox">
+            <span class="achievement__span"></span>
+            Удержал башню
+        </label>
+        <label class="achievement__label">
+            <input class="achievement__input visually-hidden" type="checkbox">
+            <span class="achievement__span"></span>
+            Разромил отель
+        </label>
+    </section>
+    <section class="contacts-data">
+        <h2 class="contacts-data__contact form-form__title">Контактная информация</h2>
+        <div class="contacts-data__wrapper">
+        <label class="contacts-data__label" for="phone-number">номер телефона</label>
+        <input class="contacts-data__input" id="phone-number" type="text" placeholder="Номер, пожалуйста">
+        </div>
+        <div class="contacts-data__wrapper">
+        <label class="contacts-data__label" for="post">адрес почты</label>
+        <input class="contacts-data__input" id="post" type="text" placeholder="Введите почту">
+        </div>
+    </section>
+    <section class="contacts-emotions">
+    <h2 class="contacts-emotions__title  form-form__title">
+        с каким приложением<br>путешествовали?
+    </h2>
+        <label class="contacts-emotions__label">
+            <input class="contacts-emotions__input visually-hidden" type="radio">
+            <span class="contacts-emotions__span"></span>
+            Pink для iOS
+        </label>
+        <label class="contacts-emotions__label">
+            <input class="contacts-emotions__input visually-hidden" type="radio">
+            <span class="contacts-emotions__span"></span>
+            Pink для Android
+        </label>
+        <label class="contacts-emotions__label">
+            <input class="contacts-emotions__input visually-hidden" type="radio">
+            <span class="contacts-emotions__span"></span>
+            Windows Phone
+        </label>
+    </section>
+        <section class="description">
+            <h2 class="description__title form-form__title">
+                опишите свои эмоции
+            </h2>
+            <label class="visually-hidden" for="area"></label>
+            <input class="description-area" id="area" type="textarea">
+        </section>
+        <section class="submit">
+            <input type="submit" class="submit__btn" placeholder="отправить форму">
+            <p class="submit__warning">*-обязательные поля</p>
+        </section>
+    </form>
+</main>
+<footer class="photo-footer">
+    <div>
+        <img src="images/logotype-tablet.png" alt="Логотип">
+    </div>
+    <ul class="footer-contacts">
+        <li class="footer-contacts__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="14" viewBox="0 0 18 14">
+                <image id="twitter.svg" width="18" height="14" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAOCAYAAAAi2ky3AAAA40lEQVQokZ2TwREBQRBFnykBbAiObjYEGeDiTASIABEgAjJABISgJEAGhKA+3WpqsYNftZeZ3jf/9/RUjvVuxkNXyjUBBoDX74EO0NRaAIbADshLMEtgHEEwwAVYA41gi7nBhm8g2usl3LZDFEmnzYCT/VjzogTkoIhVyxqrZlGwQ1K92woWLPun4ixy9kl3I8GIWaK4TFcHrez7R2frEX5rC1v8VRuvd9D5z3iLIkg5+z+6msb1DpJkc/QlTD3Vk3lKc6QR1/Smrtmdy8m8uCGQIml6W/4A3wA0KxoTOXmdOeAGlKEtkFljNbgAAAAASUVORK5CYII="/>
+            </svg>
+        </li>
+        <li class="footer-contacts__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9" height="18" viewBox="0 0 9 18">
+                <image id="facebook.svg" width="9" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAASCAYAAACJgPRIAAAAdklEQVQokdWOsQ2AMBADj4gBMgIlJSPAEqwRmACYiBHICBETIVCCniiRKGhwZb1Pfhd73SM0AAao5LEUfgYmElLiZFKAbGoAHWULYCUUA3jghlrfFEv77IK2zJQ1GJUBHnoFne867+O3I+ACZDMFLmTfbfonBBypYw2/NKvu/gAAAABJRU5ErkJggg=="/>
+            </svg>
+        </li>
+        <li class="footer-contacts__item">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="13" viewBox="0 0 15 13">
+                <image id="youtube.svg" width="15" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAANCAYAAAB2HjRBAAAAnUlEQVQokZ2SwQ3CMBAEB5QCKIH8KCN0AB/e6SShA6ggdAAdmBrSAOkglIBWOiOLoHBmPvZn9rzWLfrNYQRWwB042uliaaKogAA8gNorf7IGOkAvapNwlxyR1FhIZ6FuOaW2OsHqZcmR9F92uXJEFa7/ygOwz5W1A1ugBG6FU7rYAmnimzn5CZyBk90nfJOVrimaNos6x9S0z08R4AWPfx0s4sYgwwAAAABJRU5ErkJggg=="/>
+            </svg>
+        </li>
+    </ul>
+    <div class="photo-footer__developer">
+        <p class="photo-footer__developer-text">Разработано</p>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" viewBox="0 0 27 34">
+            <image id="htmlacademy.svg" width="27" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAYAAACuoaIwAAADVUlEQVRIia1W63HaQBA+jkMI0CtgjB+ZQTNuQKkgdBCngiQdOBXYqSDjClwC6YB0YBrwGDL2bx5mggAhZT6F9RxCL2zvjCx0t7ff7nf7cIFF5KxtW4wxB6ujybiDt+et277v2wELLN/3HTrBOe8XWGHMOR8IURxi7Z1p/d5s9++Gg7FsvVC3rN5yucJvZ+2vYYwtlsuoD2SclRXl+Rt60I8T6EG/yIsA7CtKiRUqqhrMXZcJIVhJiPBYkRdD74Qo9jnnE8752NSNPtbuhgPyHCyEkU+epo7v+3DU9Lx1GPnaX4d7K89jnuexiqoy/AnwnLVtO9bFVwrsEkYYGczNXXfn/t5KCIPva++kddTRa1oX7719oRCz9EAHQDjnga5pAd6Gpt9ssjcfRhYYjNUt66okxKisKKODev0C63FrrwJrNhrnarl8nxQFosU69quVyn0StalgMKJVaz0YqVWrt1n3g33ohRTXtG40s2PBiDIhRJCHnqi0ms2vOIfzsENM7IBBMY2yvCI7DHu4ii0wAOSljP1Pjp7seZzQVZQVJbS9BdZsNG7yeg96KRPBSJru8eHhzQ6YRF9m2zpsHCCqDtUdImg1m46sg29Ksi0wPMQzPMbvNDDLMLuUBO+PT85BP74tw/hJ5QD6KPKkbHxO+bS6OWvbDhU1JQGoBQBsZWajbAwgAEuqG1PXe5v1kEqAGJo+YozBTkirrE8YsY14uVo6lmF+swzjh7twO38eH25lT3VNv155K2f4+NArlYSFmTWdPWWXSlxkyEwpqudEIMrYJkkQEUUjP0mRJbUri4qcEkamVqZsHzARF+3TbHbxdz7/eHp0/Hk0GZ9PZ7NLd7H4UqtWv1crFXsynV5mUhYjsXema9ovP/Dt4ePDLf6vaJ++/8ALfDCaTLquu/ikquogyaBaLg8s07yO3UwbMfLMAq3yyIlSR3THtbB9hqctdwoaJwSSVB6JYDiU1YQpQVCwlCBphc+kOQfdEIdmUF4vQRVA0lqazAbsbjVs8Iy+Bq9l/pOMpQndM+xI/XK34KlT031k0RSlDPpyrUUnQaxEqcXBJGrl5r1DWV6RxztRIqd21v6LJOo56uykdXSFd57IXyRU0HIhy435zYWoo8m+F2WMsX8/JdJlhxHeQwAAAABJRU5ErkJggg=="/>
+        </svg>
+    </div>
+</footer>
+</body>
+</html>

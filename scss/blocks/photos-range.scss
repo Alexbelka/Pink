@@ -1,0 +1,150 @@
+
+.photos-range{
+  width:(280/320)*100%;
+  margin:auto;
+}
+
+.photos-range__item-car{
+  background: url('../../jpg/photo-1-mobile.jpg.jpg') no-repeat;
+}
+
+.photos-range__item-drum{
+  background: url('../../jpg/photo-2-mobile.jpg.jpg') no-repeat;
+}
+
+.photos-range__item-window{
+  background: url('../../jpg/photo-3-mobile.jpg.jpg') no-repeat;
+}
+
+.photos-range__item-foodCort{
+  background: url('../../jpg/photo-4-mobile.jpg.jpg') no-repeat;
+}
+
+.photos-range__item-legs{
+  background: url('../../jpg/photo-5-mobile.jpg.jpg') no-repeat;
+}
+
+.photos-range__item-plane{
+  background: url('../../jpg/photo-6-mobile.jpg.jpg') no-repeat;
+}
+
+.photos-range__item-image{
+  min-width: 280px;
+  min-height: 180px;
+  background-size: cover;
+}
+
+.photos-range__item-text{
+  padding:25px 31px 28px 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.photos-range p{
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photos-range__item-name{
+  font-weight:700;
+}
+
+.photos-range__item-name span{
+  color:rgb(94,104,115);
+  font-weight:normal;
+  text-transform: uppercase;
+}
+
+.photos-range__item-comment{
+  color:rgb(94,104,115);
+}
+
+.photos-range__item-like{
+  color:rgb(216,80,117);
+}
+
+.photos-range__item-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:(145/280)*100%;
+}
+
+
+@media(min-width:660px){
+  .photos-range{
+    width:(300/660)*100%;
+    margin:0;
+  }
+
+  .photos-range__item-car{
+    background: url('../../jpg/photo-1-tablet.jpg.jpg') no-repeat;
+  }
+
+  .photos-range__item-drum{
+    background: url('../../jpg/photo-2-tablet.jpg.jpg') no-repeat;
+  }
+
+  .photos-range__item-window{
+    background: url('../../jpg/photo-3-tablet.jpg.jpg') no-repeat;
+  }
+
+  .photos-range__item-foodCort{
+    background: url('../../jpg/photo-4-tablet.jpg.jpg') no-repeat;
+  }
+
+  .photos-range__item-legs{
+    background: url('../../jpg/photo-5-tablet.jpg.jpg') no-repeat;
+  }
+
+  .photos-range__item-plane{
+    background: url('../../jpg/photo-6-tablet.jpg.jpg') no-repeat;
+  }
+
+  .photos-range__item-image{
+    min-width: 300px;
+    min-height: 300px;
+    background-size: cover;
+  }
+
+  .photos-range__item-text{
+    min-height: 155px;
+  }
+
+}
+
+@media(min-width: 960px){
+  .photos-range{
+    width: (300/960)*100%;
+  }
+
+  .photos-range__item-car{
+    background: url('../../jpg/photo-1-desktop.jpg.jpg') no-repeat;
+  }
+
+  .photos-range__item-drum{
+    background: url('../../jpg/photo-2-desktop.jpg.jpg') no-repeat;
+  }
+
+  .photos-range__item-window{
+    background: url('../../jpg/photo-3-desktop.jpg.jpg') no-repeat;
+  }
+
+  .photos-range__item-foodCort{
+    background: url('../../jpg/photo-4-desktop.jpg.jpg') no-repeat;
+  }
+
+  .photos-range__item-legs{
+    background: url('../../jpg/photo-5-desktop.jpg.jpg') no-repeat;
+  }
+
+  .photos-range__item-plane{
+    background: url('../../jpg/photo-6-desktop.jpg.jpg') no-repeat;
+  }
+
+  .photos-range__item-image{
+    min-height: 400px;
+    width: inherit;
+  }
+}

@@ -1,0 +1,16 @@
+.footer-contacts{
+  min-width:170px;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contacts__item{
+  width:(50/170)*100%;
+  min-height: 50px;
+  border:2px solid rgb(233,235,236);
+  border-radius:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

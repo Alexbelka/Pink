@@ -1,8 +1,21 @@
 .iphone-hand{
   min-height: 400px;
-  //background: url('../../images/back-mobile.jpg') 0% 35% no-repeat;
-  //background-size: 100%;
+  background-color: #d21e56;
 }
+
+.iphone-hand__title{
+  color:rgb(255,255,255);
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size:42px;
+  font-weight: 100;
+  margin-top: 150px;
+}
+
+.form-page .iphone-hand__title{
+  font-size: 24px;
+}
+
 
 .iphone-hand__phone{
   display: flex;
@@ -19,6 +32,7 @@
     background: url('../../images/back-mobile.jpg') 0% 35% no-repeat;
     background-size: 100%;
   }
+
 }
 
 @media(min-width:$tablet-width){
@@ -32,7 +46,6 @@
     background-size: 130%;
     position: relative;
     z-index: 0;
-    margin:0;
     transform: translateX(-90px);
   }
 }

@@ -1,0 +1,17 @@
+.suggestion{
+  min-width: 320px;
+  padding:50px 20px 50px;
+}
+
+.suggestion__text{
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+@media(min-width: 660px){
+  .suggestion{
+    
+  }
+}
