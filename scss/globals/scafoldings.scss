@@ -31,6 +31,12 @@ img{
   z-index: 100;
 }
 
+.photo-page .section__wrapper,
+.form-page .section__wrapper{
+  min-height: 172px;
+}
+
+
 @media(min-width:660px){
   .section__wrapper{
     min-height: 620px;

@@ -77,11 +77,11 @@
 
 }
 
-@media(min-width: 960px){
+@media(min-width: 1200px){
   .panorama-card__item-picture{
     min-height: 506px;
     background: url('../../jpg/panorama-desktop.jpg.jpg') no-repeat;
-
+    background-size: cover;
   }
   .panorama-card__item-text{
     min-width: 960px;

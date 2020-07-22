@@ -27,36 +27,45 @@
                     <span class="visually-hidden">Открыть меню</span>
                 </button>
             </li>
-            <li class="header-navigation__item header-navigation__item--element"><a href="#">главная</a></li>
-            <li class="header-navigation__item header-navigation__item--element"><a href="#">фотографии</a></li>
-            <li class="header-navigation__item header-navigation__item--element"><a href="#">конкурс</a></li>
-            <li class="header-navigation__item header-navigation__item--element"><a href="#">html academy</a></li>
+            <li class="header-navigation__item header-navigation__item--element">
+                <a href="#">главная</a>
+            </li>
+            <li class="header-navigation__item header-navigation__item--element">
+                <a href="#">фотографии</a>
+            </li>
+            <li class="header-navigation__item header-navigation__item--element">
+                <a href="#">конкурс</a>
+            </li>
+            <li class="header-navigation__item header-navigation__item--element">
+                <a href="#">html academy</a>
+            </li>
         </ul>
     </nav>
     <div class="section__wrapper">
         <section class="iphone-hand">
-            <h2 class="iphone-hand__title">Конкурс на самое <br>безбашенное<br> путешествие с Пинк</h2>
+            <!--<h2 class="iphone-hand__title">Конкурс на самое <br>безбашенное<br> путешествие с Пинк</h2>-->
         </section>
     </div>
 </header>
 <main class="form-main">
 <h2 class="form-title">
-    Поделитесь своей историей и получите шанс выиграть
-    ценный приз - 1000 миль на бонусую карту!
+    Поделитесь своей историей и получите <br> шанс выиграть
+    ценный приз - 1000 <br> миль на бонусую карту!<br>
+    <span class="form-main__extra">Пожалуйста,заполните форму ниже</span>
 </h2>
     <form action="" class="form-form">
     <section class="personal-data">
         <div class="personal-data__wrapper">
         <label class="personal-data__label" for="suname">Фамилия:</label>
-        <input class="personal-data__input" id="suname" type="text" placeholder="Укажите фамилию">
+        <input class="personal-data__input point" id="suname" type="text" placeholder="Укажите фамилию">
         </div>
         <div class="personal-data__wrapper">
         <label class="personal-data__label" for="name">Имя:</label>
-        <input class="personal-data__input" id="name" type="text" placeholder="Введите ваше имя">
+        <input class="personal-data__input point" id="name" type="text" placeholder="Введите ваше имя">
         </div>
         <div class="personal-data__wrapper">
         <label class="personal-data__label" for="patronymic">Отчество:</label>
-        <input class="personal-data__input" id="patronymic" type="text" placeholder="Ну и отчество тоже">
+        <input class="personal-data__input point" id="patronymic" type="text" placeholder="Ну и отчество тоже">
         </div>
     </section>
     <section class="achievement">
@@ -99,29 +108,29 @@
         <h2 class="contacts-data__contact form-form__title">Контактная информация</h2>
         <div class="contacts-data__wrapper">
         <label class="contacts-data__label" for="phone-number">номер телефона</label>
-        <input class="contacts-data__input" id="phone-number" type="text" placeholder="Номер, пожалуйста">
+        <input class="contacts-data__input contacts-data__input-mail point" id="phone-number" type="text" placeholder="Номер, пожалуйста">
         </div>
         <div class="contacts-data__wrapper">
         <label class="contacts-data__label" for="post">адрес почты</label>
-        <input class="contacts-data__input" id="post" type="text" placeholder="Введите почту">
+        <input class="contacts-data__input contacts-data__input-phone point" id="post" type="text" placeholder="Введите почту">
         </div>
     </section>
     <section class="contacts-emotions">
     <h2 class="contacts-emotions__title  form-form__title">
-        с каким приложением<br>путешествовали?
+        с каким приложением <br> путешествовали?
     </h2>
         <label class="contacts-emotions__label">
-            <input class="contacts-emotions__input visually-hidden" type="radio">
+            <input class="contacts-emotions__input visually-hidden" name="point" type="radio">
             <span class="contacts-emotions__span"></span>
             Pink для iOS
         </label>
         <label class="contacts-emotions__label">
-            <input class="contacts-emotions__input visually-hidden" type="radio">
+            <input class="contacts-emotions__input visually-hidden" name="point" type="radio">
             <span class="contacts-emotions__span"></span>
             Pink для Android
         </label>
         <label class="contacts-emotions__label">
-            <input class="contacts-emotions__input visually-hidden" type="radio">
+            <input class="contacts-emotions__input visually-hidden" name="point" type="radio">
             <span class="contacts-emotions__span"></span>
             Windows Phone
         </label>
@@ -167,5 +176,24 @@
         </svg>
     </div>
 </footer>
+<section class="modal success">
+    <h2 class="modal__title">Ваша заявка отправлена</h2>
+        <p class="modal__text">
+            Спасибо за ваше участие, ваша заявка<br>
+            уже поступила к нам. В ближайшее<br> время
+            мы рассмотрим ее и<br> оповестим вас.
+        </p>
+    <input class="modal__btn" type="submit" value="Закрыть окно">
+</section>
+<section class="modal fail">
+    <h2 class="modal__title">Что-то пошло не так!</h2>
+    <p class="modal__text">
+       Проверьте поля выделенные красным,<br>
+        скорее всего вы забыли их заполнить
+    </p>
+    <input class="modal__btn" type="submit" value="ок">
+</section>
+<script src="js/index.js"></script>
+<script src ="js/form.js"></script>
 </body>
 </html>

@@ -1,0 +1,53 @@
+.modal{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  min-height: 380px;
+  padding:45px (20/320)*100% 50px;
+  background-color: rgb(255,255,255);
+  color:rgb(0,0,0);
+  box-shadow: 0 0 5px 1px black;
+  font-family: "Open Sans", sans-serif;
+  position:fixed;
+  top:200px;
+  z-index: 1000;
+}
+
+.modal__title{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal__text{
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.modal__btn{
+  width: 100%;
+  min-height:60px;
+  background-color:rgb(42,171,109);
+  border:none;
+  color:rgb(255,255,255);
+  font-weight:bold;
+  text-transform: uppercase;
+  cursor:pointer;
+}
+
+.popup--appear{
+  display: flex;
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+
+@keyframes slide {
+  from{
+    transform: translateY(-1500px);
+  }
+  to{
+    transform:translateY(0px);
+  }
+}

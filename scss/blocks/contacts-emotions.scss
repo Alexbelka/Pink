@@ -1,13 +1,16 @@
 .contacts-emotions{
+  width:100%;
   display: flex;
   flex-direction: column;
   margin-top: 60px;
+  background-color: rgb(242,242,242);
+  padding: 40px 20px 30px;
 }
 
 .contacts-emotions__label{
   margin-top: 40px;
   position:relative;
-  padding-left: (50/280)*100%;
+  padding-left: 50px;
 }
 
 .contacts-emotions__span{
@@ -21,6 +24,11 @@
   cursor:pointer;
 }
 
+.contacts-emotions__input:checked + .contacts-emotions__span{
+background: url('../../svg/Shape.svg') no-repeat center;
+}
+
+
 @media(min-width:768px){
   .contacts-emotions{
     box-shadow:  0 0 1px 1px rgb(209,209,209);
@@ -28,17 +36,33 @@
     padding-left: 40px;
     order:-2;
     position:relative;
+    background-color: transparent;
   }
 
   .contacts-emotions__title{
     position:absolute;
     left:50%;
+    top:0;
     transform:translate(-50%,-50%);
     background-color: rgb(255,255,255);
-    padding: 0 15px 0;
+    //padding: 0 15px 0;
   }
 
   .contacts-emotions__title br{
     display: none;
   }
+}
+
+
+@media(min-width:1200px){
+  .contacts-emotions{
+    width:48%;
+    margin:0;
+    min-height: 290px;
+  }
+
+  .contacts-emotions__title br{
+  display: none;
+  }
+
 }

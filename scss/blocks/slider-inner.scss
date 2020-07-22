@@ -49,6 +49,10 @@
 }
 
 @media(min-width:660px){
+  .slider-inner__slide{
+  padding: 20px 115px 10px;
+  }
+
   .slider-inner__slide h3{
     order:2;
   }

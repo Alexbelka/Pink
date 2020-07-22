@@ -23,15 +23,16 @@
   padding-right: 20px;
 }
 
-.page-footer__contacts:before{
-  content:"";
-  position:absolute;
-  min-height: 53px;
-  width: 100%;
-  box-shadow: 0 0 1px 1px black;
-  left:0;
-  bottom:-53px;
-}
+//.page-footer__contacts:before{
+//  content:"";
+//  position:absolute;
+//  min-height: 53px;
+//  width: 100%;
+//  box-shadow: 0 0 1px 1px black;
+//  left:0;
+//  bottom:-53px;
+//  background:rgb('../../svg/triangle-white-footer.svg');
+//}
 
 .page-footer__questions{
   font-size:24px;

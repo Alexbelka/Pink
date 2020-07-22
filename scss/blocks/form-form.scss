@@ -1,6 +1,9 @@
 .form-form{
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .form-form__title{
@@ -10,4 +13,17 @@
   font-weight: normal;
   color:rgb(222,97,131);
   text-transform: uppercase;
+  padding:0 15px 0;
+}
+
+
+@media(min-width: 768px){
+  .form-form{
+    padding: 25px 0 0 0;
+  }
+};
+
+
+@media(min-width:1200px){
+  .form-form{}
 }
