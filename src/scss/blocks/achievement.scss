@@ -1,0 +1,79 @@
+.achievement{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  background-color: rgb(242,242,242);
+  padding: 40px 30px 40px 20px;
+}
+
+.achievement__label{
+  margin-top: 42px;
+  position: relative;
+  padding-left: 50px;
+}
+
+.achievement__span{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border:1px solid rgb(209,209,209);
+  top:-50%;
+  left:0;
+  cursor:pointer;
+}
+
+.achievement__input:checked +.achievement__span{
+  background: url('../../build/svg/tick.svg') no-repeat center;
+}
+
+
+
+@media(min-width:768px){
+  .achievement{
+    box-shadow: 0 0 1px 1px rgb(229,229,229);
+    padding: 0 0 30px 60px;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .achievement__title{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(255,255,255);
+  }
+
+  .achievement__title br{
+    display: none;
+  }
+}
+
+
+@media(min-width:1200px) {
+  .achievement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    height: 200px;
+    padding: 40px 100px 0;
+  }
+
+  .achievement__label{
+    height: 35px;
+    margin:0 0 0 20px;
+    padding:0 10px 0 50px;
+    display: flex;
+    align-items: center;
+    width:30%;
+  }
+
+  .achievement__span{
+    top:0;
+  }
+
+}
+
+

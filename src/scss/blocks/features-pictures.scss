@@ -1,0 +1,25 @@
+@media(min-width:1100px){
+  .features-pictures {
+   display: flex;
+   width: (886/1200)*100%;
+   height: 300px;
+  }
+
+.features-pictures__item{
+ width:33%;
+ height:300px;
+}
+
+ .features-pictures__item--left{
+  background: url('../../build/images/LeftPhone.png') no-repeat center 0;
+ }
+
+ .features-pictures__item--center{
+  background:url('../../build/images/CenterPhone.png') no-repeat center 0;
+ }
+
+.features-pictures__item--right{
+ background:url('../../build/images/RightPhone.png') no-repeat center 0;
+}
+
+}

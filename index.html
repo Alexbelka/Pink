@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="build/css/style.css">
 </head>
 <body>
 <header class="page-header">
@@ -15,9 +15,9 @@
             <li class="header-navigation__item header-navigation__item--active">
                 <a href="#">
                 <picture>
-                    <source media="(min-width:660px)" srcset="images/logotablet.png">
-                    <source media="(min-width:960px)" srcset="images/logodesktop.png">
-                    <img src="images/logotype.png"  width="75" height="22" alt="">
+                    <source media="(min-width:660px)" srcset="build/images/logotablet.png">
+                    <source media="(min-width:960px)" srcset="build/images/logodesktop.png">
+                    <img src="build/images/logotype.png"  width="75" height="22" alt="">
                 </picture>
             </a>
             <button class="header-navigation__close">
@@ -98,14 +98,14 @@
             </p>
         </li>
         </ul>
-        <div class="features__iphone"></div>
+           <div class="features__iphone"></div>
        </div>
     </section>
 <section class="time-effect">
     <div class="time-effect__wrapper">
         <picture>
-            <source media="(min-width:1200px)" srcset="images/timer.png">
-            <img src="images/timer.png" alt="" height="276" width="238" class="time-effect__picture">
+            <source media="(min-width:1200px)" srcset="build/images/timer.png">
+            <img src="build/images/timer.png" alt="" height="276" width="238" class="time-effect__picture">
         </picture>
     </div>
     <div class="time-effect__container">
@@ -117,9 +117,9 @@
     </div>
 </section>
     <section class="slider">
-        <input class="visually-hidden" class="slider__input" id="btn-1" name="switcher" type="radio" checked>
-        <input class="visually-hidden" class="slider__input" id="btn-2" name="switcher" type="radio">
-        <input class="visually-hidden" class="slider__input" id ="btn-3" name="switcher" type="radio">
+        <input class="visually-hidden slider__input" id="btn-1" name="switcher" type="radio" checked>
+        <input class="visually-hidden slider__input" id="btn-2" name="switcher" type="radio">
+        <input class="visually-hidden slider__input" id ="btn-3" name="switcher" type="radio">
         <div class="slider__controls">
             <label class="slider__switcher-label" for="btn-1"></label>
             <label class="slider__switcher-label" for="btn-2"></label>
@@ -156,9 +156,9 @@
         </ul>
     </section>
     <section class="slider-map">
-        <input id="btn-4" type="radio" name="changer" class="slider-switcher visually-hidden" checked>
-        <input id="btn-5" type="radio" name="changer" class="slider-switcher visually-hidden">
-        <input id="btn-6" type="radio" name="changer" class="slider-switcher visually-hidden">
+        <input id="btn-4" type="radio" name="changer" value="second" class="target slider-switcher visually-hidden">
+        <input id="btn-5" type="radio" name="changer" value="third" class="target slider-switcher visually-hidden">
+        <input id="btn-6" type="radio" name="changer" value="fourth" class="target slider-switcher visually-hidden">
         <div class="slider-map__controls">
             <label class="slider-map__label" for="btn-4"></label>
             <label class="slider-map__label" for="btn-5"></label>
@@ -177,7 +177,7 @@
                     Комментарии
                 </li>
             </ul>
-            <ul class="slider-map__menu slider-map__menu--second">
+            <ul class="slider-map__menu slider-map__menu--second second item">
                 <li class="slider-map__item">
                     <p>СТАНДАРТ</p>
                     <p>2 USD</p>
@@ -201,7 +201,7 @@
                     </svg>
                 </li>
             </ul>
-            <ul class="slider-map__menu slider-map__menu--third">
+            <ul class="slider-map__menu  slider-map__menu--third third item">
                 <li class="slider-map__item">
                     <p>База</p>
                     <p>1 USD</p>
@@ -225,7 +225,7 @@
                     </svg>
                 </li>
             </ul>
-            <ul class="slider-map__menu slider-map__menu--fourth">
+            <ul class="slider-map__menu slider-map__menu--fourth fourth item">
                 <li class="slider-map__item">
                     <p>Анлим</p>
                     <p>3,99 USD</p>
@@ -288,8 +288,8 @@
         <div class="footer-block__wrapper">
     <div class="footer-block__cage">
         <picture>
-            <source media="(min-width:1100px)" srcset="images/logotype-desktop.png">
-            <img src="images/logotype-tablet.png" alt="">
+            <source media="(min-width:1100px)" srcset="build/images/logotype-desktop.png">
+            <img src="build/images/logotype-tablet.png" alt="">
         </picture>
     </div>
         <ul class="footer-block__pagination">
@@ -318,7 +318,9 @@
         </div>
     </div>
 </footer>
-<script src="js/index.js"></script>
-<script src="js/helper.js"></script>
+<script src="build/js/helper.js"></script>
+<script src="build/js/index.js"></script>
+<script src="build/js/form.js"></script>
+<script src="build/js/changer.js"></script>
 </body>
 </html>

@@ -1,0 +1,86 @@
+
+.features__wrapper{
+  display: flex;
+  min-height: 800px;
+  background: url('../../build/images/iphone-screen.png') no-repeat center bottom -40px;
+}
+
+.features-facilities{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.features-facilities__item{
+  font-size:14px;
+  line-height: 24px;
+  padding: 0 90px 0 90px;
+  //padding-left: 33px;
+  //padding-right: 33px;
+}
+
+.features-facilities__item span{
+  font-weight: 700;
+  display: block;
+  font-size: 18px;
+  margin:20px 0 20px;
+}
+
+
+@media(min-width:$tablet-width){
+  .features__wrapper{
+    min-height: 460px;
+    //width: (80/660)*100%;
+    justify-content: space-around ;
+    align-items: center;
+    background: none;
+  }
+  .features-facilities{
+  width:(310/660)*100%;
+  }
+
+  .features__iphone{
+    margin:0;
+    min-height: 466px;
+    width:(287/660)*100%;
+    background-size: 100%;
+    background: url('../../build/images/iphone-screen.png') no-repeat center;
+  }
+  .features-facilities{
+    order:2;
+    text-align: left;
+  }
+  .features-facilities__item{
+    padding: 0;
+  }
+}
+
+@media(min-width:1100px){
+  .features__wrapper{
+    background: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .features__iphone{
+    display: none;
+  }
+
+  .features-facilities{
+    flex-direction: row;
+    width:(886/1200)*100%;
+    text-align: center;
+  }
+
+  .features-facilities__item{
+    width:33%;
+  }
+
+  .features-facilities__item span{
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+

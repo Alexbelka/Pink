@@ -1,0 +1,22 @@
+.header-phone{
+  background:  url('../../build/images/iphone-mobile.png') no-repeat left bottom,
+  url('../../build/jpg/back-mobile.jpg') no-repeat  center/cover;
+  min-height: 462px;
+}
+
+@media(min-width:660px){
+  .header-phone{
+    min-height: 729px;
+    background: url('../../build/images/iphone-tablet.png') no-repeat 200px bottom,
+    url('../../build/images/back-tablet@1x.png')no-repeat center/cover;
+  }
+}
+
+
+@media(min-width:1200px){
+  .header-phone{
+    min-height: 853px;
+    background: url('../../build/images/iphone-desktop.png') no-repeat bottom,
+            url('../../build/jpg/back-desktop.jpg')no-repeat center/cover;
+  }
+}
